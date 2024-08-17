@@ -45,7 +45,7 @@ let download =download url.dl_url
 
 
 await conn sendMessage  (from,{audio:{url:download url},mimetype:"audio/mpeg"},{quoted:mek})
-await conn sendMessage  (from,{document:{url:download url},mimetype:"audio/mpeg",fileName:data.title"mp3"document},{quoted:mek})
+await conn sendMessage  (from,{document:{url:download url},mimetype:"audio/mpeg",fileName:data.title"mp3",caption:"MADE BY DARK CYBER MD"document},{quoted:mek})
 
 
     
