@@ -3,9 +3,9 @@ const fg = require('api-dylux')
 const yts = require('yts-search')
 
 cmd({
-    pattern: "alive",
-    desc: "Check bot online or no.",
-    category: "main",
+    pattern: "song",
+    desc: "download song",
+    category: "download",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -56,6 +56,7 @@ await conn sendMessage  (from,{audio:{url:download url},mimetype:"audio/mpeg"},{
 console.log(e)
 reply (`${e}`)
 }
+})
     
 
 
