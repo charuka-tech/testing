@@ -41,11 +41,11 @@ let down =await.fg.uta(url)
 let download =download url.dl_url
 
 
-// send audio message 
+// send audio + decumet message 
 
 
 await conn sendMessage  (from,{audio:{url:download url},mimetype:"audio/mpeg"},{quoted:mek})
-await conn sendMessage  (from,{document:{url:download url},mimetype:"audio/mpeg",fileName:data.title + "mp3",caption:"MADE BY DARK CYBER MD",{quoted:mek})
+await conn sendMessage  (from,{document:{url:download url},mimetype:"audio/mpeg",fileName:data.title + "mp3",caption:"MADE BY DARK CYBER MD"},{quoted:mek})
 
 
     
@@ -110,11 +110,11 @@ let down =await.fg.uta(url)
 let download =download url.dl_url
 
 
-// send video message 
+// send video + document message 
 
 
 await conn sendMessage  (from,{video:{url:download url},mimetype:"video/mp4"},{quoted:mek})
-await conn sendMessage  (from,{document:{url:download url},mimetype:"video/mp4",fileName:data.title + "mp4",{quoted:mek})
+await conn sendMessage  (from,{document:{url:download url},mimetype:"video/mp4",fileName:data.title + "mp4",caption:"MADE BY DARK CYBER MD"},{quoted:mek})
 
 
 
