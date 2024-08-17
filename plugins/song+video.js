@@ -38,7 +38,7 @@ await conn.sendMessage  (from,{ image:{url:data.thumbnail},caption: desc,quoted:
 // download audio
 
 let down =await.fg.uta(url)
-let download =down.dl_url
+let download =download url.dl_url
 
 
 // send audio message 
@@ -63,3 +63,67 @@ reply (`${e}`)
 
 
 
+//=============================VIDEO-DL==========================
+
+
+
+
+
+cmd({
+    pattern: "video",
+    desc: "download video",
+    category: "download",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try}
+
+    
+if(!q) return reply ("please give me url or name")
+
+const search= await yts (q)
+const data= search.videos[0]
+const url= data.url
+
+
+let desc= `
+
+
+> 📽️DARK CYBER VIDEO DOWNLOADER📽️
+
+📍title: ${data.title}
+🧬description: ${data.description}
+🔮time: ${data.timestamp}
+📌ago: ${data.ago}
+📶views: ${data.views}
+
+> 🎵MADE BY DARK CYBER🎵 `
+
+await conn.sendMessage  (from,{ image:{url:data.thumbnail},caption: desc,quoted:mak);
+
+
+// download video
+
+let down =await.fg.uta(url)
+let download =download url.dl_url
+
+
+// send video message 
+
+
+await conn sendMessage  (from,{video:{url:download url},mimetype:"video/mp4"},{quoted:mek})
+await conn sendMessage  (from,{video:{url:download url},mimetype:"video/mp4",fileName:data.title"mp4"document},{quoted:mek})
+
+
+
+    
+
+
+
+
+
+} catch (e){
+console.log(e)
+reply (`${e}`)
+}
+})
