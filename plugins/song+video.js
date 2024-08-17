@@ -45,7 +45,7 @@ let download =download url.dl_url
 
 
 await conn sendMessage  (from,{audio:{url:download url},mimetype:"audio/mpeg"},{quoted:mek})
-await conn sendMessage  (from,{document:{url:download url},mimetype:"audio/mpeg",fileName:data.title"mp3",caption:"MADE BY DARK CYBER MD"document},{quoted:mek})
+await conn sendMessage  (from,{document:{url:download url},mimetype:"audio/mpeg",fileName:data.title + "mp3",caption:"MADE BY DARK CYBER MD",{quoted:mek})
 
 
     
@@ -114,7 +114,7 @@ let download =download url.dl_url
 
 
 await conn sendMessage  (from,{video:{url:download url},mimetype:"video/mp4"},{quoted:mek})
-await conn sendMessage  (from,{document:{url:download url},mimetype:"video/mp4",fileName:data.title"mp4"document},{quoted:mek})
+await conn sendMessage  (from,{document:{url:download url},mimetype:"video/mp4",fileName:data.title + "mp4",{quoted:mek})
 
 
 
