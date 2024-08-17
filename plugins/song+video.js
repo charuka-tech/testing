@@ -22,15 +22,15 @@ const url= data.url
 let desc= `
 
 
-`🎵DARK CYBER SONG DOWNLOADER🎵`
+> 🎵DARK CYBER SONG DOWNLOADER🎵
 
 📍title: ${data.title}
-🧬description: ${}
+🧬description: ${data.description}
 🔮time: ${data.timestamp}
 📌ago: ${data.ago}
-📶views: $ {dta.views}
+📶views: ${data.views}
 
-> 🎵MADE BY DARK CYBER🎵
+> 🎵MADE BY DARK CYBER🎵 `
 
 await conn.sendMessage  (from,{ image:{url:data.thumbnail},caption: desc,quoted:mak);
 
