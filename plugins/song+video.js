@@ -19,7 +19,7 @@ const url = data.url
 let desc = `
 
 
-🎶`DARK CYBER SONG DOWNLOADER`🎶
+🎶DARK CYBER SONG DOWNLOADER🎶
 
 📍title: ${data.title}
 🧬description: ${data.description}
@@ -27,7 +27,7 @@ let desc = `
 📌ago: ${data.ago}
 📶views: ${data.views}
 
-🎧`MADE BY DARK CYBER`🎧
+🎧MADE BY DARK CYBER🎧
 
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -67,7 +67,7 @@ const url = data.url
 let desc = `
 
 
-📽️`DARK CYBER VIDEO DOWNLOADER`📽
+📽️DARK CYBER VIDEO DOWNLOADER📽
 
 📍title: ${data.title}
 🧬description: ${data.description}
@@ -75,7 +75,7 @@ let desc = `
 📌ago: ${data.ago}
 📶views: ${data.views}
 
-📽️`MADE BY DARK CYBER`📽️
+📽️MADE BY DARK CYBER📽️
 
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
