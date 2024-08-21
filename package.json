@@ -4,9 +4,9 @@
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name DARK CYBER BOT",
-    "stop": "pm2 stop DARK CYBER BOT",
-    "restart": "pm2 restart DARK CYBER BOT"
+    "start": "pm2 start index.js --deep-monitoring --attach --name dark-cyber-md",
+    "stop": "pm2 stop dark-cyber-md",
+    "restart": "pm2 restart dark-cyber-md"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.6.0",
