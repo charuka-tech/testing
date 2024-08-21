@@ -4,7 +4,7 @@ const os = require("os")
 const {runtime} = require('../lib/functions')
 cmd({
     pattern: "system",
-    alias: [status,botinfo],
+    alias: ["status","botinfo"],
     desc: "Check up time , ram usage and more",
     category: "main",
     filename: __filename
