@@ -73,7 +73,7 @@ let madeMenu = `
  * MADE BY DARK CYBER MD *
    `
    
- await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"}caption:madeMenu},{quoted:mek})
+ await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"},caption:madeMenu},{quoted:mek})
 
 
 }catch(e){
