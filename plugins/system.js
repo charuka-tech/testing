@@ -5,7 +5,7 @@ const {runtime} = require('../lib/functions')
 cmd({
     pattern: "system",
     alias: ["status","botinfo"],
-    react: "📡"
+    react: "⚙️",
     desc: "Check up time , ram usage and more",
     category: "main",
     filename: __filename
