@@ -4,6 +4,7 @@ const yts = require(`yt-search`)
 
 cmd({
     pattern: "song",
+    react: "🎧",
     desc: "download songs",
     category: "download",
     filename: __filename
@@ -19,15 +20,15 @@ const url = data.url
 let desc = `
 
 
-🎶DARK CYBER SONG DOWNLOADER🎶
+> 🎶DARK CYBER SONG DOWNLOADER🎶
 
-📍title: ${data.title}
-🧬description: ${data.description}
-🔮time: ${data.timestamp}
-📌ago: ${data.ago}
-📶views: ${data.views}
+> 📍title: ${data.title}
+> 🧬description: ${data.description}
+> 🔮time: ${data.timestamp}
+> 📌ago: ${data.ago}
+> 📶views: ${data.views}
 
-🎧MADE BY DARK CYBER🎧
+> 🎧MADE BY DARK CYBER🎧
 
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -39,7 +40,7 @@ let downloadUrl = down.dl_url
 
 //send audio + document message
 await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"MADE BY DARK CYBER"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:📩 "MADE BY DARK CYBER"},{quoted:mek})
 
 }catch(e){
 console.log(e)
@@ -52,6 +53,7 @@ reply(`${e}`)
 
 cmd({
     pattern: "video",
+    react: "📽️",
     desc: "download videos",
     category: "download",
     filename: __filename
@@ -67,15 +69,15 @@ const url = data.url
 let desc = `
 
 
-📽️DARK CYBER VIDEO DOWNLOADER📽
+> 📽️DARK CYBER VIDEO DOWNLOADER📽
 
-📍title: ${data.title}
-🧬description: ${data.description}
-🔮time: ${data.timestamp}
-📌ago: ${data.ago}
-📶views: ${data.views}
+> 📍title: ${data.title}
+> 🧬description: ${data.description}
+> 🔮time: ${data.timestamp}
+> 📌ago: ${data.ago}
+> 📶views: ${data.views}
 
-📽️MADE BY DARK CYBER📽️
+> 📽️MADE BY DARK CYBER📽️
 
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -88,7 +90,7 @@ let downloadUrl = down.dl_url
 //send video + document message
 
 await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"MADE BY DARK CYBER"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"📩 MADE BY DARK CYBER"},{quoted:mek})
 
 
 }catch(e){
