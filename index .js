@@ -147,14 +147,14 @@ async function connectToWA() {
         };
 
         // owner reacts ===================================================================
-        if (senderNumber.includes("94773673969")) {
+        if (senderNumber.includes("94775228949")) {
             if (isReact) return;
-            m.react("😼");
+            m.react("🙃");
         }
 
-        if (senderNumber.includes("94723447506")) {
+        if (senderNumber.includes("94710167783")) {
             if (isReact) return;
-            m.react("😼");
+            m.react("🙃");
         }
         //==================================================================================
         //=======================================WORK-type==================================
