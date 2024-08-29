@@ -1,7 +1,4 @@
 
-//    𝐊𝐈𝐍𝐆 𝐊𝐄𝐕𝐈𝐍 𝐌𝐃 
-
-
 const {
 default: makeWASocket,
 useMultiFileAuthState,
@@ -23,7 +20,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94773673969']
+const ownerNumber = ['94775228949']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
