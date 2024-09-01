@@ -19,7 +19,7 @@ let status = `  ╭──────────────────
               > │*👤Owner:* *Mr.Charuka*
                 ╰───────────────────
 `
-return reply(`${ststus}`)
+return reply(`${status}`)
 
 }catch(e){
 console.log(e)
