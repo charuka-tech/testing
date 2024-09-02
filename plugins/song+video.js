@@ -20,7 +20,7 @@ const url = data.url
 let desc = `
 
 
-> 🎶DARK CYBER SONG DOWNLOADER🎶
+ 🎶𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑🎶
 
 > 📍title: ${data.title}
 > 🧬description: ${data.description}
@@ -28,7 +28,7 @@ let desc = `
 > 📌ago: ${data.ago}
 > 📶views: ${data.views}
 
-> 🎧MADE BY DARK CYBER🎧
+ 🎧𝐌𝐀𝐃𝐄 𝐁𝐘 𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑🎧
 
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -60,7 +60,7 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-if(!q) return reply("please give me url of name")
+if(!q) return reply("please give me url or name🌍")
 const search = await yts(q)
 const data = search.videos[0];
 const url = data.url
@@ -69,7 +69,7 @@ const url = data.url
 let desc = `
 
 
-> 📽️DARK CYBER VIDEO DOWNLOADER📽
+ 📽️𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑📽
 
 > 📍title: ${data.title}
 > 🧬description: ${data.description}
@@ -77,7 +77,7 @@ let desc = `
 > 📌ago: ${data.ago}
 > 📶views: ${data.views}
 
-> 📽️MADE BY DARK CYBER📽️
+ 📽️𝐌𝐀𝐃𝐄 𝐁𝐘 𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑📽️
 
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
