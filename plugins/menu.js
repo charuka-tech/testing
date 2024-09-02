@@ -35,26 +35,24 @@ let madeMenu = `
 │🧬Prefix: [.]
 │📌version: 1.0.0
 ╰━━━━━━━━━━━━━━━━━━━ 
-╭━❮ MAIN COMMAND ❏
+╭━❮ MAIN COMMAND👨‍🌾 ❏
 ${menu.main}
 ╰━━━━━━━━━━━━━━━━━━━
-╭━❮ DOWNLOAD COMMAND ❏
+╭━❮ DOWNLOAD COMMAND📩 ❏
 ${menu.download}
 ╰━━━━━━━━━━━━━━━━━━━
-╭━❮ GROUP COMMAND ❏
+╭━❮ GROUP COMMAND📑 ❏
 ${menu.group}
 ╰━━━━━━━━━━━━━━━━━━━
-╭━❮ OWNER COMMAND ❏
+╭━❮ OWNER COMMAND👤 ❏
 ${menu.owner}
 ╰━━━━━━━━━━━━━━━━━━━
-╭━❮ CONVERT COMMAND ❏
+╭━❮ CONVERT COMMAND🔮 ❏
 ${menu.convert}
 ╰━━━━━━━━━━━━━━━━━━━
-╭━❮ SEARCH COMMAND ❏
+╭━❮ SEARCH COMMAND🔎 ❏
 ${menu.search}
 ╰━━━━━━━━━━━━━━━━━━━
- ╸╸╸╸╸╸╸╸╸╸╸╸╸╸╸╸╸╸╸
-> MADE BY DARK CYBER MD
    `
    
  await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"},caption:madeMenu},{quoted:mek})
