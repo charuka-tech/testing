@@ -30,6 +30,7 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 let madeMenu = ` 
 ╭───────────────────
 │👋 *Hello ${pushname}* 
+│🕐Uptime:*  ${runtime(process.uptime())}
 │👤Bot Owener: MR Charuka
 │🤖Bot Name: DARK CYBER 
 │🧬Prefix: [.]
