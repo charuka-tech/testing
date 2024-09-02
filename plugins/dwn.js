@@ -3,7 +3,7 @@ const config = require('../config')
 const { cmd, commands } = require('../command')
 
 //====your bot name=======
-let cap = '┏━━━━━━━━━━━━━┓\n\n⬆️ *ᴅᴀʀᴋ ᴄʏʙᴇʀ ꜰʙ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*☑️\n\n▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁\n\n✷▎☢ *ᴄʀᴇᴀᴛᴇʀ*: ᴍʀ ᴄʜᴀʀᴜᴋᴀ\n\n✷▎☏ *ᴄʀᴇᴀᴛᴇʀ ɴᴜᴍʙᴇʀ*:  wa.me//+94775228949\n\n┗━━━━━━━━━━━━━┛\n\n*ʏᴏᴜʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ*...🔥🔥'
+let cap = '┏━━━━━━━━━━━━━━━━━━┓\n\n⬆️ *ᴅᴀʀᴋ ᴄʏʙᴇʀ ꜰʙ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*☑️\n\n━━━━━━━━━━━━━━━━━━━\n\n✷▎☢ *ᴄʀᴇᴀᴛᴇʀ*: ᴍʀ ᴄʜᴀʀᴜᴋᴀ\n\n✷▎☏ *ᴄʀᴇᴀᴛᴇʀ ɴᴜᴍʙᴇʀ*:  wa.me//+94775228949\n\n┗━━━━━━━━━━━━━━━━━━┛\n\n*ʏᴏᴜʀ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ*...🔥🔥'
 
 // <========FETCH API URL========>
 let baseUrl;
@@ -49,7 +49,7 @@ cmd({
 },
 async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        if (!q && !q.startsWith("https://")) return reply("give me twitter url")
+        if (!q && !q.startsWith("https://")) return reply("give me twitter url🌍")
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/twitterdl?url=${q}`)
         reply("*⬆️Downloading...*")
@@ -75,7 +75,7 @@ cmd({
 },
 async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        if (!q && !q.startsWith("https://")) return reply("give me gdrive url")
+        if (!q && !q.startsWith("https://")) return reply("give me gdrive url🌍")
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/gdrivedl?url=${q}`)
         reply("*🧚Downloading...*")
@@ -97,7 +97,7 @@ cmd({
 },
 async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        if (!q && !q.startsWith("https://")) return reply("give me mediafire url")
+        if (!q && !q.startsWith("https://")) return reply("give me mediafire url🌍")
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/mediafiredl?url=${q}`)
         reply("*🧚Downloading...*")
