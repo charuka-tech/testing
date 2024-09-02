@@ -10,17 +10,10 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
+
+return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption: config.ALIVE_MSG},{quoted: mek})
     
 
-let madeAlive = ` •ᴀʟɪᴠᴇ ɴᴏᴡ•
-              
-> 🤖ʙᴏᴛ ɴᴀᴍᴇ: ᴅᴀʀᴋ ᴄʏʙᴇʀ ᴍᴅ 
-> 👤ʙᴏᴛ ᴏᴡɴᴇʀ: ᴍʀ ᴄʜᴀʀᴜᴋᴀ
-> 💫 ᴘʀᴇғɪx: [ . ]
-┗━━━━━━━━━━━━━┈⊷  `
-`
-   
- await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"},caption:madeAlive},{quoted:mek})
 
 
 }catch(e){
