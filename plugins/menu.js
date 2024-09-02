@@ -28,32 +28,32 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 
 
 let madeMenu = ` 
-╭───────────────────
+╭━━━━━━━━━━━━━━━━━━━
 │👋 *Hello ${pushname}* 
-│🕐Uptime:*  ${runtime(process.uptime())}
-│👤Bot Owener: MR Charuka
-│🤖Bot Name: DARK CYBER 
-│🧬Prefix: [.]
-│📌version: 1.0.0
+│👤*Bot Owener*: *MR Charuka*
+│🤖*Bot Name*: *DARK CYBER* 
+│🧬*Prefix*: [.]
+│📌*Version*: 1.0.0
+│👤*Owener Number*:94775228949
 ╰━━━━━━━━━━━━━━━━━━━ 
-╭━❮ MAIN COMMAND👨‍🌾 ❏
+╭━❮ MAIN COMMAND ❏
 ${menu.main}
-╰━━━━━━━━━━━━━━━━━━━
-╭━❮ DOWNLOAD COMMAND📩 ❏
+╰━━━━━━━━━━━━●●●►
+╭━❮ DOWNLOAD COMMAND ❏
 ${menu.download}
-╰━━━━━━━━━━━━━━━━━━━
-╭━❮ GROUP COMMAND📑 ❏
+╰━━━━━━━━━━━━●●●►
+╭━❮ GROUP COMMAND ❏
 ${menu.group}
-╰━━━━━━━━━━━━━━━━━━━
-╭━❮ OWNER COMMAND👤 ❏
+╰━━━━━━━━━━━━●●●►
+╭━❮ OWNER COMMAND ❏
 ${menu.owner}
-╰━━━━━━━━━━━━━━━━━━━
-╭━❮ CONVERT COMMAND🔮 ❏
+╰━━━━━━━━━━━━●●●►
+╭━❮ CONVERT COMMAND ❏
 ${menu.convert}
-╰━━━━━━━━━━━━━━━━━━━
-╭━❮ SEARCH COMMAND🔎 ❏
+╰━━━━━━━━━━━━●●●►
+╭━❮ SEARCH COMMAND ❏
 ${menu.search}
-╰━━━━━━━━━━━━━━━━━━━
+╰━━━━━━━━━━━━●●●►
    `
    
  await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"},caption:madeMenu},{quoted:mek})
