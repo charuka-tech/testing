@@ -1,9 +1,10 @@
 const config = require('../config')
 const {cmd , commands} = require('../command')
+const {runtime} = require('../lib/functions')
 
 cmd({
     pattern: "menu",
-    react: "📜",
+     react: "📜",
     desc: "get cmd list.",
     category: "main",
     filename: __filename
@@ -28,32 +29,34 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 
 
 let madeMenu = ` 
-╭━━━━━━━━━━━━━━━━━━━
-│👋 *Hello ${pushname}* 
-│👤*Bot Owener*: *MR Charuka*
-│🤖*Bot Name*: *DARK CYBER* 
-│🧬*Prefix*: [.]
-│📌*Version*: 1.0.0
-│👤*Owener Number*:94775228949
-╰━━━━━━━━━━━━━━━━━━━ 
-╭━❮ MAIN COMMAND ❏
+╓╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
+╠👋 *Hello ${pushname}*
+╠🕐Uptime:*  ${runtime(process.uptime())}
+╠👤Bot Owener: 𝐌𝐑 𝐂𝐡𝐚𝐫𝐮𝐤𝐚
+╠🤖Bot Name: 𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑 𝐌𝐃
+╠🧬Prefix: [.]
+╠🔖Versions: 1.0.0
+╠☏ Number: +94775228949
+╙╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍❮❂❯
+╭━━❮ MAIN COMMAND ❏
 ${menu.main}
 ╰━━━━━━━━━━━━●●●►
-╭━❮ DOWNLOAD COMMAND ❏
+╭━━❮ DOWNLOAD COMMAND ❏
 ${menu.download}
 ╰━━━━━━━━━━━━●●●►
-╭━❮ GROUP COMMAND ❏
+╭━━❮ GROUP COMMAND ❏
 ${menu.group}
 ╰━━━━━━━━━━━━●●●►
-╭━❮ OWNER COMMAND ❏
+╭━━❮ OWNER COMMAND ❏
 ${menu.owner}
 ╰━━━━━━━━━━━━●●●►
-╭━❮ CONVERT COMMAND ❏
+╭━━❮ CONVERT COMMAND ❏
 ${menu.convert}
 ╰━━━━━━━━━━━━●●●►
-╭━❮ SEARCH COMMAND ❏
+╭━━❮ SEARCH COMMAND ❏
 ${menu.search}
 ╰━━━━━━━━━━━━●●●►
+ 
    `
    
  await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"},caption:madeMenu},{quoted:mek})
@@ -64,4 +67,10 @@ console.log(e)
 reply(`${e}`)
 }
 })
+
+
+
+
+
+
 
