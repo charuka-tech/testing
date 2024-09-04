@@ -11,7 +11,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-  let repo = `┏━━━━━━ •ᴀʟɪᴠᴇ ɴᴏᴡ•━━━━┈⊷  
+  let repo = `┏━━━━━━ •𝗗𝗔𝗥𝗞 𝗖𝗬𝗕𝗘𝗥•━━━━┈⊷  
 > 🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ᴅᴀʀᴋ ᴄʏʙᴇʀ ᴍᴅ*              
 > 🔮ʙᴏᴛ ʀᴇᴘᴏ: *ᴄᴏᴍᴍɪɴɢ ꜱᴏᴏɴ*
 > 📡 ᴘʟᴀᴛғᴏʀᴍ: *linux*
