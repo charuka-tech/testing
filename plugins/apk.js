@@ -1,5 +1,8 @@
 const config = require('../config')
 const { cmd, commands } = require('../command')
+
+//====your bot name=======
+let cap = 'Simple Wa-Bot 💫'
 cmd({
     pattern: "apk",
     alias: ["modapk"],
