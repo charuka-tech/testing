@@ -13,8 +13,17 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption: config.ALIVE_MSG},{quoted: mek})
     
+let cyber = ` •ᴀʟɪᴠᴇ ɴᴏᴡ•
+              
+> 🕐Uptime:*  ${runtime(process.uptime())}
+> 📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+> 🛡 ᴍᴏᴅᴇ: *${mode}*
+> 💫 ᴘʀᴇғɪx: [ . ]
+┗━━━━━━━━━━━━━┈⊷  `
+
+
+ await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"},caption:cyber},{quoted:mek})
 
 
 
