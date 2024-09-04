@@ -113,9 +113,10 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
 
 //tiktok downloader
 cmd({
-    pattern: "tiktok ",
-    alias: ["tiktok"],
-    desc: "download tiktok videos",
+    pattern: "tiktok",
+    react: "🗿",
+    alias: ["tt"],
+    desc: "download tt videos",
     category: "download",
     filename: __filename
 },
@@ -124,14 +125,14 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
         if (!q && !q.startsWith("https://")) return reply("give me tiktok url")
         //fetch data from api  
         let data = await fetchJson(`${baseUrl}/api/tiktokdl?url=${q}`)
-        reply("*📥Downloading...*")
-        //send video (hd,sd)
-        await conn.sendMessage(from, { video: { url: data.data.hd }, mimetype: "video/mp4", caption: `- QUALITY HD\n\n> ${cap}` }, { quoted: mek })
-        await conn.sendMessage(from, { video: { url: data.data.sd }, mimetype: "video/mp4", caption: `- QUALITY SD \n\n> ${cap}` }, { quoted: mek })  
+        reply("📥*Downloading...*")
+        //send video (wm,nwm)
+        await conn.sendMessage(from, { video: { url: data.data.no_wm }, mimetype: "video/mp4", caption: `- NO-WATERMARK\n\n ${cap}` }, { quoted: mek })
+        await conn.sendMessage(from, { video: { url: data.data.wm }, mimetype: "video/mp4", caption: `- WITH-WATERMARK \n\n ${cap}` }, { quoted: mek })  
+        //send audio    
+        await conn.sendMessage(from, { audio: { url: data.data.audio }, mimetype: "audio/mpeg" }, { quoted: mek })  
     } catch (e) {
         console.log(e)
         reply(`${e}`)
     }
 })
-
-
