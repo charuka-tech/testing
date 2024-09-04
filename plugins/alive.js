@@ -18,7 +18,6 @@ let cyber = ` •ᴀʟɪᴠᴇ ɴᴏᴡ•
               
 > 🕐Uptime:*  ${runtime(process.uptime())}
 > 📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-> 🛡 ᴍᴏᴅᴇ: *${mode}*
 > 💫 ᴘʀᴇғɪx: [ . ]
 ┗━━━━━━━━━━━━━┈⊷  `
 
