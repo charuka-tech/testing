@@ -14,12 +14,12 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     
-let cyber = ` ┏━━━━━ •ᴀʟɪᴠᴇ ɴᴏᴡ•━━━━┈⊷  
-> 🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ᴅᴀʀᴋ ᴄʏʙᴇʀ ᴍᴅ*              
-> 🕐Uptime: *${runtime(process.uptime())}*
-> 📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-> 💫 ᴘʀᴇғɪx: [ . ]
-┗━━━━━━━━━━━━━━━━┈⊷
+let cyber = `> ┏━━━━━ •ᴀʟɪᴠᴇ ɴᴏᴡ•━━━━┈⊷  
+> ║🤖┣ ʙᴏᴛ ɴᴀᴍᴇ: *ᴅᴀʀᴋ ᴄʏʙᴇʀ ᴍᴅ*              
+> ║🕐┣ Uptime: *${runtime(process.uptime())}*
+> ║📡┣ ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+> ║💫┣ ᴘʀᴇғɪx: [ . ]
+> ┗━━━━━━━━━━━━━━━━┈⊷
  `
 
 
