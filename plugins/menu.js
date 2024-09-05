@@ -4,7 +4,7 @@ const {runtime} = require('../lib/functions')
 
 cmd({
     pattern: "menu",
-     react: "📜",
+     react: "📃",
     desc: "get cmd list.",
     category: "main",
     filename: __filename
@@ -38,25 +38,26 @@ let madeMenu = `
 ║🔖╠ Versions: 1.0.0
 ║🎰╠ Owner Number: +94775228949
 ║  ╚═══════────────⛦
-║╠━━❮ MAIN COMMAND ❏
+║╠━━❮ MAIN COMMAND 
  ${menu.main}
-║╚━━━━━━━━━━━━●●●►
-║╠━━❮ DOWNLOAD COMMAND ❏
+║╚━━━━━━━━━━━●●●►
+║╠━━❮ DOWNLOAD COMMAND 
  ${menu.download}
-║╚━━━━━━━━━━━━●●●►
-║╠━━❮ GROUP COMMAND ❏
+║╚━━━━━━━━━━━●●●►
+║╠━━❮ GROUP COMMAND 
  ${menu.group}
-║╚━━━━━━━━━━━━●●●►
-║╠━━❮ OWNER COMMAND ❏
+║╚━━━━━━━━━━━●●●►
+║╠━━❮ OWNER COMMAND 
  ${menu.owner}
-║╚━━━━━━━━━━━━●●●►
-║╠━━❮ CONVERT COMMAND ❏
+║╚━━━━━━━━━━━●●●►
+║╠━━❮ CONVERT COMMAND 
  ${menu.convert}
-║╚━━━━━━━━━━━━●●●►
-║╠━━❮ SEARCH COMMAND ❏
+║╚━━━━━━━━━━━●●●►
+║╠━━❮ SEARCH COMMAND 
  ${menu.search}
 ║╚━━━━━━━━━━━━●●●►
-║ *CREATED BY MR.CHARUKA & MR NUDUN*
+║ *CREATED BY* 
+║   *DARK CREATORS™*
 ╚════════════──────⛦
    `
    
