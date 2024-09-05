@@ -43,7 +43,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
  *Enjoy these images! 👾*
 
-> ꜱʜᴀᴅᴏᴡ ᴍᴅ ᴡᴀᴛꜱ ᴀᴘᴘ ʙᴏᴛ`
+> 𝙳𝙰𝚁𝙺 𝙲𝚈𝙱𝙴𝚁 𝙼𝙳 𝙸𝙼𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁 `
 }, { quoted: mek });
 }
 
