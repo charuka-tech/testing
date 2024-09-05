@@ -39,22 +39,22 @@ let madeMenu = `
 ║🎰╠ Owner Number: +94775228949
 ║  ╚═══════────────⛦
 ║╠━━❮ MAIN COMMAND 
- ${menu.main}
+║ ${menu.main}
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ DOWNLOAD COMMAND 
- ${menu.download}
+║ ${menu.download}
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ GROUP COMMAND 
- ${menu.group}
+║ ${menu.group}
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ OWNER COMMAND 
- ${menu.owner}
+║ ${menu.owner}
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ CONVERT COMMAND 
- ${menu.convert}
+║ ${menu.convert}
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ SEARCH COMMAND 
- ${menu.search}
+║ ${menu.search}
 ║╚━━━━━━━━━━━━●●●►
 ║ *CREATED BY* 
 ║   *DARK CREATORS™*
