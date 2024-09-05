@@ -1,12 +1,12 @@
 {
-  "name": "DARK-CYBER-MD",
+  "name": "mizuki-md",
   "version": "1.0.0",
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name dark-cyber-md",
-    "stop": "pm2 stop dark-cyber-md",
-    "restart": "pm2 restart dark-cyber-md"
+    "start": "pm2 start index.js --deep-monitoring --attach --name mizuki-md",
+    "stop": "pm2 stop mizuki-md",
+    "restart": "pm2 restart mizuki-md"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.6.0",
