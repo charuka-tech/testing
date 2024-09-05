@@ -39,26 +39,25 @@ let madeMenu = `
 ║🎰╠ Owner Number: +94775228949
 ║  ╚═══════────────⛦
 ║╠━━❮ MAIN COMMAND ❏
-║╠${menu.main}
+║╠ ${menu.main}
 ║╚━━━━━━━━━━━━●●●►
 ║╠━━❮ DOWNLOAD COMMAND ❏
-║╠${menu.download}
+║╠ ${menu.download}
 ║╚━━━━━━━━━━━━●●●►
 ║╠━━❮ GROUP COMMAND ❏
-║╠${menu.group}
+║╠ ${menu.group}
 ║╚━━━━━━━━━━━━●●●►
 ║╠━━❮ OWNER COMMAND ❏
-║╠${menu.owner}
+║╠ ${menu.owner}
 ║╚━━━━━━━━━━━━●●●►
 ║╠━━❮ CONVERT COMMAND ❏
-║╠${menu.convert}
+║╠ ${menu.convert}
 ║╚━━━━━━━━━━━━●●●►
 ║╠━━❮ SEARCH COMMAND ❏
-║╠${menu.search}
+║╠ ${menu.search}
 ║╚━━━━━━━━━━━━●●●►
 ║ *CREATED BY MR.CHARUKA & MR NUDUN*
 ╚════════════──────⛦
- 
    `
    
  await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"},caption:madeMenu},{quoted:mek})
