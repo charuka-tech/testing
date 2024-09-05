@@ -30,13 +30,13 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
 
 let madeMenu = ` 
 ╔═════════────────⛦
-║👋╠ `Hello:` ${pushname}
-║🕐╠ `Uptime:`  ${runtime(process.uptime())}
-║👤╠ `Bot Owener:` 𝐌𝐑 𝐂𝐡𝐚𝐫𝐮𝐤𝐚
-║🤖╠ `Bot Name:` 𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑 𝐌𝐃
-║🧬╠ `Prefix:` [.]
-║🔖╠ `Versions:` 1.0.0
-║🎰╠ `Owner Number:` +94775228949
+║👋╠ Hello: ${pushname}
+║🕐╠ Uptime: ${runtime(process.uptime())}
+║👤╠ Bot Owener: 𝐌𝐑 𝐂𝐡𝐚𝐫𝐮𝐤𝐚
+║🤖╠ Bot Name: 𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑 𝐌𝐃
+║🧬╠ Prefix: [.]
+║🔖╠ Versions: 1.0.0
+║🎰╠ Owner Number: +94775228949
 ║  ╚═══════────────⛦
 ║╠━━❮ MAIN COMMAND ❏
 ║╠${menu.main}
@@ -56,7 +56,7 @@ let madeMenu = `
 ║╠━━❮ SEARCH COMMAND ❏
 ║╠${menu.search}
 ║╚━━━━━━━━━━━━●●●►
-║ *CREATED BY MR.CHARUKA*
+║ *CREATED BY MR.CHARUKA & MR NUDUN*
 ╚════════════──────⛦
  
    `
