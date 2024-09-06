@@ -15,7 +15,7 @@ try{
 
     
 let cyber = `┏━━━━━ •ᴀʟɪᴠᴇ ɴᴏᴡ•━━┈⊷  
-║🤖┣ ʙᴏᴛ ɴᴀᴍᴇ: *ᴅᴀʀᴋ ᴄʏʙᴇʀ ᴍᴅ*              
+║🤖┣ ʙᴏᴛ ɴᴀᴍᴇ: *ᴍɪᴢᴜᴋɪ ᴍᴅ*              
 ║🕐┣ Uptime: *${runtime(process.uptime())}*
 ║📡┣ ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
 ║💫┣ ᴘʀᴇғɪx: [ . ]
@@ -23,7 +23,7 @@ let cyber = `┏━━━━━ •ᴀʟɪᴠᴇ ɴᴏᴡ•━━┈⊷
  `
 
 
- await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"},caption:cyber},{quoted:mek})
+ await conn.sendMessage(from,{image:{url:"https://i.ibb.co/SsqGnFc/20240905-163614.jpg"},caption:cyber},{quoted:mek})
 
 
 
