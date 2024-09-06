@@ -32,7 +32,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
  Your Movie Download Request Uploading. You Can See The File In Document Format Below.
 ╰───────────────╯
 
-> Qᴜᴇᴇɴ-ᴢᴀᴢɪᴇ-ᴍᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɴʙᴛ
+> ᴍɪᴢᴜᴋɪ ᴍᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ 
 `;
 
         // Send movie details and image
@@ -49,7 +49,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 document: { url: downloadUrl },
                 mimetype: "video/mp4",
                 fileName: `${data.title} (${option.quality}).mp4`,
-                caption: `> 𝗤𝗨𝗘𝗘𝗡-𝗭𝗔𝗭𝗜𝗘 𝗠𝗗 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 𝗡𝗕𝗧\n\nQuality: ${option.quality}\nSize: ${option.size}`
+                caption: `> ᴍɪᴢᴜᴋɪ ᴍᴅ \n\nQuality: ${option.quality}\nSize: ${option.size}`
             }, { quoted: mek });
         }
     } catch (e) {
