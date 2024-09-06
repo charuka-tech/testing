@@ -32,8 +32,8 @@ let madeMenu = `
 ╔═════════────────⛦
 ║👋╠ Hello: ${pushname}
 ║🕐╠ Uptime: ${runtime(process.uptime())}
-║👤╠ Bot Owener: 𝐌𝐑 𝐂𝐡𝐚𝐫𝐮𝐤𝐚
-║🤖╠ Bot Name: 𝐃𝐀𝐑𝐊 𝐂𝐘𝐁𝐄𝐑 𝐌𝐃
+║👤╠ Bot Owener: ᴍʀ ᴄʜᴀʀᴜᴋᴀ
+║🤖╠ Bot Name: ᴍɪᴢᴜᴋɪ ᴍᴅ
 ║🧬╠ Prefix: [.]
 ║🔖╠ Versions: 1.0.0
 ║🎰╠ Owner Number: +94775228949
@@ -61,7 +61,7 @@ ${menu.search}
 ╚════════════──────⛦
    `
    
- await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/900435c6d3157c98c3c88.jpg"},caption:madeMenu},{quoted:mek})
+ await conn.sendMessage(from,{image:{url:"https://i.ibb.co/qkCxxdH/20240906-082521.jpg"},caption:madeMenu},{quoted:mek})
 
 
 }catch(e){
