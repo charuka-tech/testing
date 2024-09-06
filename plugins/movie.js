@@ -25,7 +25,7 @@ cmd({
         }
 
         const movieInfo = `
-*Queen Anuu Movie Search*
+*Mizuki md Movie Search*
 
 *ᴛɪᴛʟᴇ:* ${data.Title}
 *ʏᴇᴀʀ:* ${data.Year}
@@ -46,7 +46,7 @@ cmd({
 
         await conn.sendMessage(from, {
             image: { url: imageUrl },
-            caption: `${movieInfo}\n> BHASHI-MD`
+            caption: `${movieInfo}\n> MIZUKI-MD`
         }, { quoted: mek });
     } catch (e) {
         console.error(e);
