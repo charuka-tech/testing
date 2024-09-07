@@ -12,20 +12,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-let menu = {
-main: '',
-download: '',
-group: '',
-owner: '',
-convert: '',
-search: ''
-};
 
-for (let i = 0; i < commands.length; i++) {
-if (commands[i].pattern && !commands[i].dontAddCommandList) {
-menu[commands[i].category] += `.${commands[i].pattern}\n`;
- }
-}
 
 
 let madeMenu = ` 
@@ -39,22 +26,38 @@ let madeMenu = `
 ║🎰╠ Owner Number: +94775228949
 ║  ╚═══════────────⛦
 ║╠━━❮ MAIN COMMAND 
-${menu.main}
+║╠🧚.ai
+║╠🧚.alive 
+║╠🧚.menu
+║╠🧚.news
+║╠🧚.ping
+║╠🧚.system 
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ DOWNLOAD COMMAND 
-${menu.download}
+║╠🧚.fb
+║╠🧚.tiktok 
+║╠🧚.video 
+║╠🧚.song
+║╠🧚.gdrive
+║╠🧚.movie
+║╠🧚.twitter
+║╠🧚.mediafire
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ GROUP COMMAND 
-${menu.group}
+║╠🧚
+║╠🧚
+║╠🧚
+║╠🧚
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ OWNER COMMAND 
-${menu.owner}
+║╠🧚.restart
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ CONVERT COMMAND 
-${menu.convert}
+║╠🧚
 ║╚━━━━━━━━━━━●●●►
 ║╠━━❮ SEARCH COMMAND 
-${menu.search}
+║╠🧚.yts
+║╠🧚.img
 ║╚━━━━━━━━━━━━●●●►
 ║ *CREATED BY* 
 ║   *DARK CREATORS™*
