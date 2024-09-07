@@ -6,6 +6,6 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID||"0msmTJrD#teQpWm4dYfiWwwRve1eLSYahclmtK79OgFGgBJ4JAcA",
-MONGODB: process.env.MONGODB || "mongodb+srv://sam:sam@cluster0.u1smxsv.mongodb.net",
+MONGODB: process.env.MONGODB || "mongodb://mongo:CfbbnzygILTJqymFDckHyhHhVGOZMRJA@autorack.proxy.rlwy.net:35244",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 };
