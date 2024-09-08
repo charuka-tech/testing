@@ -20,15 +20,19 @@ const url = data.url
 let desc = `
 
 
-◆𝙳𝙰𝚁𝙺 𝙲𝚈𝙱𝙴𝚁 𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
+◆𝙳𝙰𝚁𝙺 ᴍɪᴢᴜᴋɪ ᴍᴅ 𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
 
-> 📍title: ${data.title}
-  🧬description: ${data.description}
-> 🔮time: ${data.timestamp}
-  📌ago: ${data.ago}
-> 📶views: ${data.views}
+➥ title: ${data.title}
 
-©  𝙼𝙰𝙳𝙴 𝙱𝚈 𝙳𝙰𝚁𝙺 𝙲𝚈𝙱𝙴𝚁
+➥ description: ${data.description}
+  
+➥ time: ${data.timestamp}
+
+➥ ago: ${data.ago}
+  
+➥ views: ${data.views}
+
+©  𝙼𝙰𝙳𝙴 𝙱𝚈 𝙼𝙸𝚉𝚄𝙺𝙸 𝙼𝙳
 
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -69,15 +73,19 @@ const url = data.url
 let desc = `
 
 
-◆𝙳𝙰𝚁𝙺 𝙲𝚈𝙱𝙴𝚁 𝚅𝙸𝙳𝙴𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
+◆𝙼𝙸𝚉𝚄𝙺𝙸 𝙼𝙳 𝚅𝙸𝙳𝙴𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
 
-> 📍title: ${data.title}
-  🧬description: ${data.description}
-> 🔮time: ${data.timestamp}
-  📌ago: ${data.ago}
-> 📶views: ${data.views}
+➥ title: ${data.title}
 
-© 𝙼𝙰𝙳𝙴 𝙱𝚈 𝙳𝙰𝚁𝙺 𝙲𝚈𝙱𝙴𝚁 
+➥ description: ${data.description}
+
+➥ time: ${data.timestamp}
+
+➥ ago: ${data.ago}
+
+➥ views: ${data.views}
+
+© 𝙼𝙰𝙳𝙴 𝙱𝚈 𝙼𝙸𝚉𝚄𝙺𝙸 𝙼𝙳
 
 `
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
