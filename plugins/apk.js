@@ -5,7 +5,7 @@ let cap = '*MIZUKI MD WHATSAP BOT APK DOWNLOADER*'
 
 let baseUrl;
 (async () => {
-    let baseUrlGet = await fetchJson(`https://raw.githubusercontent.com/prabathLK/PUBLIC-URL-HOST-DB/main/public/url.json`)
+    let baseUrlGet = await fetchJson(`application/vnd.android.package-archive`)
     baseUrl = baseUrlGet.api
 })();
 
