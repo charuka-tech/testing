@@ -23,28 +23,11 @@ let cyber = `┏━━━━━ •ᴀʟɪᴠᴇ ɴᴏᴡ•━━┈⊷
 ┗━━━━━━━━━━━━━━┈⊷
  `
 
-    let buttons = [
-      {
-        "name": "quick_reply",
-        "buttonParamsJson": JSON.stringify({
-          display_text: "MENU",
-          id: `${prefix}menu`
-        })
-      },
-      {
-        "name": "quick_reply",
-        "buttonParamsJson": JSON.stringify({
-          display_text: "PING",
-          id: `${prefix}ping`
-        })
-      }
-    ];
-
+    
 
  await conn.sendMessage(from,{image:{url:"https://i.ibb.co/SsqGnFc/20240905-163614.jpg"},caption:cyber},{quoted:mek})
 
 
- await conn.sendMessage(from,{caption:buttons},{quoted:mek})
 
 }catch(e){
 console.log(e)
