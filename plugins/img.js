@@ -9,7 +9,7 @@ cmd({
     pattern: "img",
     desc: "Search and send images from Google.",
     react: "🖼️",
-    category: "download",
+    category: "media",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -38,7 +38,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
             // Send the image with a footer
             await conn.sendMessage(from, {
                 image: buffer,
-                caption: `
+                caption: `         
 *💗Image ${i + 1} from your search!💗*
 
  *Enjoy these images! 👾*
@@ -52,3 +52,10 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         reply(`Error: ${e.message}`);
     }
 });
+
+    
+
+
+
+
+
