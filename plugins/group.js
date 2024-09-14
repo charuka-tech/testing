@@ -4,7 +4,8 @@ const {cmd , commands} = require('../command')
 cmd({   name: "mute",
         fromMe: "isPublic",
         desc: "Mutes the group.",
-        category: "group"
+        category: "group", 
+        filename: __filename
     },
 
     
