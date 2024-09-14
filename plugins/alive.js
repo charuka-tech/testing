@@ -15,7 +15,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     
-let cyber = `┏━━━━━ •ᴀʟɪᴠᴇ ɴᴏᴡ•━━┈⊷  
+let cyber = `┏━━━━━ •ᴀʟɪᴠᴇ ɴᴏᴡ•━━┈⊷
+║👋┣ ʜᴇʟʟᴏ *${pushname}*
 ║🤖┣ ʙᴏᴛ ɴᴀᴍᴇ: *ᴍɪᴢᴜᴋɪ ᴍᴅ*              
 ║🕐┣ Uptime: *${runtime(process.uptime())}*
 ║📡┣ ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
