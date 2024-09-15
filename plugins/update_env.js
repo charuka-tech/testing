@@ -13,7 +13,7 @@ async (conn, mek, m, { from, q, reply, isOwner }) => {
     if (!isOwner) return;
 
     if (!q) {
-        return reply("🙇‍♂️ *Please provide the environment variable and its new value.* \n\nExample: `.update ALIVE_MSG: hello i am prabath kumara`");
+        return reply("🙇‍♂️ *Please provide the environment variable and its new value.* \n\nExample: `.update ALIVE_MSG: hello i am mizuki md`");
     }
 
     // Find the position of the first colon or comma
@@ -54,6 +54,11 @@ async (conn, mek, m, { from, q, reply, isOwner }) => {
     if (key === 'AUTO_READ_STATUS' && !['true', 'false'].includes(newValue)) {
         return reply("😓 *Invalid value for AUTO_READ_STATUS. Please use `true` or `false`.*");
     }
+    
+    if (key === 'AUTO_REACT' && !['true', 'false'].includes(newValue)) {
+        return reply("😓 *Invalid value for AUTO_READ_STATUS. Please use `true` or `false`.*");
+    }
+
 
     try {
         // Check if the environment variable exists
