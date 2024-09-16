@@ -47,7 +47,7 @@ const config = await readEnv();
 const prefix = config.PREFIX
 //==================================================
 
-console.log("Connecting MIZUMI-MD 🧬...");
+console.log("Connecting MIZUKI-MD 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
