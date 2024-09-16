@@ -3,21 +3,16 @@ const {cmd , commands} = require('../command')
 const {runtime} = require('../lib/functions')
 
 cmd({
-    pattern: "ytmp3",
-     react: "🚥",
-    desc: "dowloade yts document.",
-    category: "downloade",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-
-cmd({
+    
         pattern: "ytmp3",
         desc: "Downloads audio by yt link.",
         category: "downloader",
         use: '<yt video url>',
-    },
+    
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+    
     async(Void, citel, text) => {
         const getRandom = (ext) => {
             return `${Math.floor(Math.random() * 10000)}${ext}`;
