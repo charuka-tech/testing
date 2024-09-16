@@ -77,7 +77,7 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `*MIZUMI-MD connected successful ✅*\n\n*PREFIX:* ${prefix} `;
+let up = `*MIZUKI-MD connected successful ✅*\n\n*PREFIX:* ${prefix} `;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/397000a07a1deb7fad9c2.jpg` }, caption: up })
 
