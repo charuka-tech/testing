@@ -16,12 +16,15 @@ try{
 
     
 let cyber = `•👋 Hello  *${pushname}* I'm Alive Now•
- > ʜᴇʟʟᴏ *${pushname}*
- > ʙᴏᴛ ɴᴀᴍᴇ: *ᴍɪᴢᴜᴋɪ ᴍᴅ*              
- > ᴜptime: *${runtime(process.uptime())}*
- > ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
- > ᴘʀᴇғɪx: [ . ]
-   ᴍɪᴢᴜᴋɪ ᴍᴅ ᴄʀᴇᴀᴛᴇ ʙʏ ᴅᴀʀᴋ ᴄʀᴇᴀᴛᴏʀꜱ
+
+
+> ʙᴏᴛ ɴᴀᴍᴇ: *ᴍɪᴢᴜᴋɪ ᴍᴅ*
+> ᴜᴘᴛɪᴍᴇ: *${runtime(process.uptime())}*
+> ᴘʟᴀᴛꜰᴏʀᴍ: *${os.platform()}*
+> ᴘʀᴇꜰɪx: [ . ]
+
+
+ᴍɪᴢᴜᴋɪ ᴍᴅ ᴄʀᴇᴀᴛᴇ ʙʏ ᴅᴀʀᴋ ᴄʀᴇᴀᴛᴏʀꜱ
  `
 
     
