@@ -17,21 +17,18 @@ const data = search.videos[0];
 const url = data.url
 
 
-let desc = `
+let desc = `◆𝙳𝙰𝚁𝙺 ᴍɪᴢᴜᴋɪ ᴍᴅ 𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
+────────────────────
+│➤ title: *${data.title}*
 
-
-◆𝙳𝙰𝚁𝙺 ᴍɪᴢᴜᴋɪ ᴍᴅ 𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
-
-➥ title: ${data.title}
-
-➥ description: ${data.description}
+│➤ description: *${data.description}*
   
-➥ time: ${data.timestamp}
+│➤ time: *${data.timestamp}*
 
-➥ ago: ${data.ago}
+│➤ ago: *${data.ago}*
   
-➥ views: ${data.views}
-
+│➤ views: *${data.views}*
+────────────────────
 ©  𝙼𝙰𝙳𝙴 𝙱𝚈 𝙼𝙸𝚉𝚄𝙺𝙸 𝙼𝙳
 
 `
@@ -44,7 +41,7 @@ let downloadUrl = down.dl_url
 
 //send audio + document message
 await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"© ᴹᴬᴰᴱ ᴮʸ ᴹᴵᶻᵁᴷᴵ ᴹᴰ"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"> © ᴹᴬᴰᴱ ᴮʸ ᴹᴵᶻᵁᴷᴵ ᴹᴰ"},{quoted:mek})
 
 }catch(e){
 console.log(e)
@@ -70,21 +67,18 @@ const data = search.videos[0];
 const url = data.url
 
 
-let desc = `
+let desc = `◆𝙼𝙸𝚉𝚄𝙺𝙸 𝙼𝙳 𝚅𝙸𝙳𝙴𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
+────────────────────
+│➤ title: *${data.title}*
 
+│➤ description: *${data.description}*
 
-◆𝙼𝙸𝚉𝚄𝙺𝙸 𝙼𝙳 𝚅𝙸𝙳𝙴𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁◆
+│➤ time: *${data.timestamp}*
 
-➥ title: ${data.title}
+│➤ ago: *${data.ago}*
 
-➥ description: ${data.description}
-
-➥ time: ${data.timestamp}
-
-➥ ago: ${data.ago}
-
-➥ views: ${data.views}
-
+│➤ views: *${data.views}*
+────────────────────
 © 𝙼𝙰𝙳𝙴 𝙱𝚈 𝙼𝙸𝚉𝚄𝙺𝙸 𝙼𝙳
 
 `
@@ -99,7 +93,7 @@ let downloadUrl = down.dl_url
 
 await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
 
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"© ᴹᴬᴰᴱ ᴮʸ ᴹᴵᶻᵁᴷᴵ ᴹᴰ"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"> © ᴹᴬᴰᴱ ᴮʸ ᴹᴵᶻᵁᴷᴵ ᴹᴰ"},{quoted:mek})
 
 
 }catch(e){
