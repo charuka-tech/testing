@@ -7,7 +7,7 @@ const config = require('../config');
 cmd({
     pattern: "rvideo",
     desc: "Fetch and send a random video from Pexels.",
-    category: "fun",
+    category: "downloade",
     react: "🎥",
     filename: __filename
 },
@@ -36,7 +36,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         writer.on('finish', async () => {
             await conn.sendMessage(from, { text: '✅ *Your video has been successfully downloaded!* ✅' }, { quoted: mek });
-            await conn.sendMessage(from, { video: { url: videoPath }, caption: `🎥 *Random Pexels Video* 🎥\n\nTitle: ${videoTitle}\n> BHASHI-MD` }, { quoted: mek });
+            await conn.sendMessage(from, { video: { url: videoPath }, caption: `🎥 *Random Pexels Video* 🎥\n\nTitle: ${videoTitle}\n> 𝗠𝗜𝗭𝗨𝗞𝗜-𝗠𝗗` }, { quoted: mek });
 
             // Clean up
             fs.unlinkSync(videoPath);
