@@ -28,7 +28,7 @@ async (conn, mek, m, { from, q, reply }) => {
 🔠 *Translated*: ${translation}
 🌐 *Language*: ${targetLang.toUpperCase()}
 
-> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐇𝐀𝐒𝐇𝐈-𝐌𝐃`;
+> 𝐏𝐎𝐖𝐄𝐑𝐃 𝐁𝐘 𝐌𝐈𝐙𝐔𝐊𝐈 𝐌𝐃`;
 
         return reply(translationMessage);
     } catch (e) {
