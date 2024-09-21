@@ -24,7 +24,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const data = response.data;
 
         if (!data.items || data.items.length === 0) {
-            return reply("No images found for your query.");
+            return reply("❌ No images found for your query.");
         }
 
         // Send images
@@ -43,7 +43,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
  *Enjoy these images! 👾*
 
-> 𝙳𝙰𝚁𝙺 𝙲𝚈𝙱𝙴𝚁 𝙼𝙳 𝙸𝙼𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁 `
+> 𝙼𝙸𝚉𝚄𝙺𝙺 𝙼𝙳 𝙸𝙼𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁 `
 }, { quoted: mek });
 }
 
