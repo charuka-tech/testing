@@ -142,11 +142,11 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
-if(senderNumber.includes("94775228949")){
+if(senderNumber.includes("94718939447")){
 if(isReact) return
 m.react("👻")
 }
-if(senderNumber.includes("94710167783")){
+if(senderNumber.includes("94775228949")){
 if(isReact) return
 m.react("👻")
 }
