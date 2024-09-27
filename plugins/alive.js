@@ -15,13 +15,15 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     
-let cyber = `•👋 Hello  *${pushname}* I'm Alive Now•
-
-
-> ʙᴏᴛ ɴᴀᴍᴇ: *ᴍɪᴢᴜᴋɪ ᴍᴅ*
-> ᴜᴘᴛɪᴍᴇ: *${runtime(process.uptime())}*
-> ᴘʟᴀᴛꜰᴏʀᴍ: *${os.platform()}*
-> ᴘʀᴇꜰɪx: [ . ]
+let cyber = `${monspace}👋 කොහිමද ${pushname} I'm alive now${monspace}
+    
+*🚀Version:* ${require("../package.json").version}
+*⌛Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+*🕒Runtime:* ${runtime(process.uptime())}
+*📍Platform:* ${hostname}
+🐼This is the result of our teams hard work and our technical cybers team owns the bots rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances And 100 Commands And logo, thumbnail,banner Maker Commands Ai Chatbot feathers On Our Bot
+                    
+*🌻Have A Nice Day..*🌻
 
 
 ᴍɪᴢᴜᴋɪ ᴍᴅ ᴄʀᴇᴀᴛᴇ ʙʏ ᴅᴀʀᴋ ᴄʀᴇᴀᴛᴏʀꜱ
