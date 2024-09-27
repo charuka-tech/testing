@@ -15,7 +15,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     
-let cyber = `${monspace}👋 කොහිමද ${pushname} I'm alive now${monspace}
+let cyber = `👋 HELLO ${pushname} I'm alive now
     
 *🚀Version:* ${require("../package.json").version}
 *⌛Memory:* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
