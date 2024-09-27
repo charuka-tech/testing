@@ -32,9 +32,9 @@ async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sen
             });
         }
 
-    } catch (e) {
-reply('*Error !!*')
-l(e)
+    }catch(e){
+console.log(e)
+reply(`${e}`)
 }
 })
 
