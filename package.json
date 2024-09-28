@@ -2,7 +2,7 @@
   "name": "mizuki-md",
   "version": "1.0.0",
   "description": "A WhatsApp bot created using Node.js",
-  "main": "index.js",
+  "main": "mizuki.js",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name mizuki-md",
     "stop": "pm2 stop mizuki-md",
