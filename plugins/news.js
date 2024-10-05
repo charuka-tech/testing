@@ -1,44 +1,111 @@
-const axios = require('axios');
-const { cmd } = require('../command');
+const config = require('../config')
+const { cmd } = require('../command')
+const axios = require('axios')
+const { fetchJson } = require('../lib/functions')
+
+const apilink = 'https://dark-yasiya-news-apis.vercel.app/api' // API LINK ( DO NOT CHANGE THIS!! )
+
+
+// ================================HIRU NEWS========================================
 
 cmd({
-    pattern: "news",
-    desc: "Get the latest news headlines.",
-    category: "main",
-    react: "📰",
+    pattern: "hirunews",
+    alias: ["hiru","news1"],
+    react: "⭐",
+    desc: "",
+    category: "news",
+    use: '.hirunews',
     filename: __filename
 },
-async (conn, mek, m, { from, reply }) => {
-    try {
-        const apiKey="0f2c43ab11324578a7b1709651736382";
-        const response = await axios.get(`https://hirunews-api-x.cleverapps.io/api/latest=${apiKey}`);
-        const articles = response.data.articles;
+async(conn, mek, m,{from, quoted }) => {
+try{
 
-        if (!articles.length) return reply("No news articles found.");
+const news = await fetchJson(`${apilink}/hiru`)
+  
+const msg = `
+           ⭐ *HIRU NEWS* ⭐
 
-        // Send each article as a separate message with image and title
-        for (let i = 0; i < Math.min(articles.length, 5); i++) {
-            const article = articles[i];
-            let message = `
-📰 *${article.title}*
-⚠️ _${article.description}_
-🔗 _${article.url}_
+       
+• *Title* - ${news.result.title}
 
-  *© ᴍᴀᴅᴇ ʙʏ ᴍɪᴢᴜᴋɪ ᴍᴅッ*
-            `;
+• *News* - ${news.result.desc}
 
-            console.log('Article URL:', article.urlToImage); // Log image URL for debugging
+• *Link* - ${news.result.url}`
 
-            if (article.urlToImage) {
-                // Send image with caption
-                await conn.sendMessage(from, { image: { url: article.urlToImage }, caption: message });
-            } else {
-                // Send text message if no image is available
-                await conn.sendMessage(from, { text: message });
-            }
-        };
-    } catch (e) {
-        console.error("Error fetching news:", e);
-        reply("Could not fetch news. Please try again later.");
-    }
-});
+
+await conn.sendMessage( from, { image: { url: news.result.image || '' }, caption: msg }, { quoted: mek })
+} catch (e) {
+console.log(e)
+reply(e)
+}
+})
+
+// ================================SIRASA NEWS========================================
+
+cmd({
+    pattern: "sirasanews",
+    alias: ["sirasa","news2"],
+    react: "🔺",
+    desc: "",
+    category: "news",
+    use: '.sirasa',
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted }) => {
+try{
+
+const news = await fetchJson(`${apilink}/sirasa`)
+  
+const msg = `
+           🔺 *SIRASA NEWS* 🔺
+
+       
+• *Title* - ${news.result.title}
+
+• *News* - ${news.result.desc}
+
+• *Link* - ${news.result.url} `
+
+
+await conn.sendMessage( from, { image: { url: news.result.image || '' }, caption: msg }, { quoted: mek })
+} catch (e) {
+console.log(e)
+reply(e)
+}
+})
+
+// ================================DERANA NEWS========================================
+
+cmd({
+    pattern: "derananews",
+    alias: ["derana","news3"],
+    react: "📑",
+    desc: "",
+    category: "news",
+    use: '.derana',
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted }) => {
+try{
+
+const news = await fetchJson(`${apilink}/derana`)
+  
+const msg = `
+           📑 *DERANA NEWS* 📑
+
+       
+• *Title* - ${news.result.title}
+
+• *News* - ${news.result.desc}
+
+• *Date* - ${news.result.date}
+
+• *Link* - ${news.result.url} `
+
+
+await conn.sendMessage( from, { image: { url: news.result.image || '' }, caption: msg }, { quoted: mek })
+} catch (e) {
+console.log(e)
+reply(e)
+}
+})
