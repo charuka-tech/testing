@@ -82,7 +82,7 @@ if(commands[i].category === 'search'){
 menuc4 += `*│►* .${commands[i].pattern}\n`
 }}};
 
-let menuc = ``
+let menuc5 = ``
 for (let i=0;i<commands.length;i++) { 
 if(commands[i].category === 'download'){
   if(!commands[i].dontAddCommandList){
