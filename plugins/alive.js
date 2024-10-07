@@ -113,7 +113,6 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
     messageId: msg.key.id
   });
     
-};
 
 
     
