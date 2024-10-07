@@ -112,7 +112,7 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
   await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
     messageId: msg.key.id
   });
-    }
+    
 };
 
 
