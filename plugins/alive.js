@@ -29,7 +29,92 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
 
 
 > ᴍɪᴢᴜᴋɪ ᴍᴅ ᴄʀᴇᴀᴛᴇ ʙʏ ᴅᴀʀᴋ ᴄʀᴇᴀᴛᴏʀꜱ
- `
+ `;
+
+  const buttons = [
+        {
+          "name": "quick_reply",
+          "buttonParamsJson": JSON.stringify({
+            display_text: "OWNER MENU",
+            id: `.rushmenu`
+          })
+        },
+        {
+          "name": "quick_reply",
+          "buttonParamsJson": JSON.stringify({
+            display_text: "downloadmenu",
+            id: `.downloadmenu`
+          })
+        },
+        {
+          "name": "quick_reply",
+          "buttonParamsJson": JSON.stringify({
+            display_text: "all menu",
+            id: `.allmenu`
+          })
+        },
+    {
+          "name": "cta_copy",
+          "buttonParamsJson": JSON.stringify({
+            display_text: "our yt馃槂",
+            id: "${prefix}ping",
+             copy_code: '.rushmdwa'
+          })
+        },
+    {
+          "name": "cta_copy",
+          "buttonParamsJson": JSON.stringify({
+            display_text: "OWNER AND REPO",
+            id: "${prefix}ping",
+             copy_code: '.rushmdrepo'
+          })
+        }
+        ];
+
+  const msg = generateWAMessageFromContent(m.from, {
+    viewOnceMessage: {
+      message: {
+        messageContextInfo: {
+          deviceListMetadata: {},
+          deviceListMetadataVersion: 2
+        },
+        interactiveMessage: proto.Message.InteractiveMessage.create({
+          body: proto.Message.InteractiveMessage.Body.create({
+            text: uptimeMessage
+          }),
+          footer: proto.Message.InteractiveMessage.Footer.create({
+            text: "漏 Powered By 饾殎饾殑饾殏饾櫡 饾櫦饾櫝"
+          }),
+          header: proto.Message.InteractiveMessage.Header.create({
+            title: "",
+            gifPlayback: true,
+            subtitle: "",
+            hasMediaAttachment: false 
+          }),
+          nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+            buttons
+          }),
+          contextInfo: {
+                  mentionedJid: [m.sender], 
+                  forwardingScore: 999,
+                  isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                  newsletterJid: '911111111',
+                  newsletterName: "RUSH",
+                  serverMessageId: 143
+                }
+              }
+        }),
+      },
+    },
+  }, {});
+
+  await Matrix.relayMessage(msg.key.remoteJid, msg.message, {
+    messageId: msg.key.id
+  });
+    }
+};
+
 
     
 
