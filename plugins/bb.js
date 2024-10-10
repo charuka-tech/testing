@@ -8,7 +8,7 @@ const fs = require('fs-extra')
 var videotime = 60000 // 1000 min
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 cmd({
-    pattern: "yts",
+    pattern: "yts2",
     alias: ["ytsearch"],
     use: '.yts lelena',
     react: "🔎",
@@ -40,7 +40,7 @@ await conn.sendMessage(from , { text:  mesaj }, { quoted: mek } )
 })
 
 cmd({
-    pattern: "video",
+    pattern: "video2",
     alias: ["ytvideo"],
     use: '.video lelena',
     react: "📽️",
@@ -83,7 +83,7 @@ await conn.sendMessage(from, { react: { text: '🎥', key: senda1.key }})
 })
 
 cmd({
-    pattern: "song",
+    pattern: "song2",
     alias: ["ytsong"],
     use: '.song lelena',
     react: "🎧",
