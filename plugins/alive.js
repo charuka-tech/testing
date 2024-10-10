@@ -2,8 +2,7 @@ const config = require('../config')
 const {cmd , commands} = require('../command')
 const os = require("os")
 const{runtime} = require('../lib/functions')
-import pkg, { prepareWAMessageMedia } from '@whiskeysockets/baileys';
-const { generateWAMessageFromContent, proto } = pkg;
+
 
 
 
@@ -41,39 +40,16 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
             display_text: "OWNER MENU",
-            id: `.rushmenu`
+            id: `.menu`
           })
         },
         {
           "name": "quick_reply",
           "buttonParamsJson": JSON.stringify({
             display_text: "downloadmenu",
-            id: `.downloadmenu`
+            id: `.ping`
           })
-        },
-        {
-          "name": "quick_reply",
-          "buttonParamsJson": JSON.stringify({
-            display_text: "all menu",
-            id: `.allmenu`
-          })
-        },
-    {
-          "name": "cta_copy",
-          "buttonParamsJson": JSON.stringify({
-            display_text: "our yt馃槂",
-            id: "${prefix}ping",
-             copy_code: '.rushmdwa'
-          })
-        },
-    {
-          "name": "cta_copy",
-          "buttonParamsJson": JSON.stringify({
-            display_text: "OWNER AND REPO",
-            id: "${prefix}ping",
-             copy_code: '.rushmdrepo'
-          })
-        }
+          }
         ];
 
   const msg = generateWAMessageFromContent(m.from, {
