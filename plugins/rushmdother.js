@@ -2,12 +2,12 @@
 // copy කරන්නෙපා බන් butoon
 
 
-import axios from 'axios';
-import FormData from 'form-data';
-import fetch from 'node-fetch';
-import fs from 'fs';
-import * as cheerio from 'cheerio';
-import mime from 'mime';
+const axios from 'axios';
+const FormData from 'form-data';
+const fetch from 'node-fetch';
+const fs from 'fs';
+const * as cheerio from 'cheerio';
+const mime from 'mime';
 
 export const TelegraPh = async (path) => {
   return new Promise(async (resolve, reject) => {
