@@ -28,6 +28,7 @@
     "youtubedl-core": "^4.11.4",
     "api-dylux":"1.8.5",
     "mongoose":"8.6.3",
-    "mumaker":"2.0.0"
+    "mumaker":"2.0.0",
+    "sinhalasub.lk":"9.0.0"
   }
 }
