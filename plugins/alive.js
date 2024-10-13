@@ -47,9 +47,7 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
 				}
 			}])
 			msg.button = dbtn.button
-			if(dbtn.type) {
-				return await core.sendbuttonimg(msg)
-			}
+			if(dbtn.type) 
 
 		
 		
