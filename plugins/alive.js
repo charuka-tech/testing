@@ -35,19 +35,15 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
 > ᴍɪᴢᴜᴋɪ ᴍᴅ ᴄʀᴇᴀᴛᴇ ʙʏ ᴅᴀʀᴋ ᴄʀᴇᴀᴛᴏʀꜱ
  `;
     const dbtn = await core.buttongen([{
-				urlButton: {
-					displayText: 'Go To Playstore',
-					url: `https://play.google.com/store/apps/details?id=${appId}`
+				
+				quickReplyButton: {
+					displayText: 'menu',
+					id: '.menu' 
 				}
 			}, {
 				quickReplyButton: {
-					displayText: 'Screenshots',
-					id: 'apk screenshot/-/' + appInfo.screenshots.join('/=/')
-				}
-			}, {
-				quickReplyButton: {
-					displayText: 'Background',
-					id: 'link ' + appInfo.headerImage
+					displayText: 'ping',
+					id: '.ping '
 				}
 			}])
 			msg.button = dbtn.button
