@@ -34,7 +34,7 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
 
 > ᴍɪᴢᴜᴋɪ ᴍᴅ ᴄʀᴇᴀᴛᴇ ʙʏ ᴅᴀʀᴋ ᴄʀᴇᴀᴛᴏʀꜱ
  `;
-    const dbtn = await conn.buttongen([{
+    let dbtn = await conn.buttongen([{
 				
 				quickReplyButton: {
 					displayText: 'menu',
@@ -48,6 +48,7 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
 			}])
 			msg.button = dbtn.button
 			if(dbtn.type) 
+				
 
 		
 		
