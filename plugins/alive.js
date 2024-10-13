@@ -51,7 +51,7 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
 				return await core.sendbuttonimg(msg)
 			}
 
-			return await core.sendButtonimg(msg)
+		
 		
 
 
