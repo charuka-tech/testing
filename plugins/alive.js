@@ -34,7 +34,7 @@ let cyber = `👋 HELLO ${pushname} I'm alive now
 
 > ᴍɪᴢᴜᴋɪ ᴍᴅ ᴄʀᴇᴀᴛᴇ ʙʏ ᴅᴀʀᴋ ᴄʀᴇᴀᴛᴏʀꜱ
  `;
-    const dbtn = await core.buttongen([{
+    const dbtn = await conn.buttongen([{
 				
 				quickReplyButton: {
 					displayText: 'menu',
