@@ -164,6 +164,48 @@ ${menuc6}*╰───────────●●►*
 
 
 *•Qᴜᴇᴇɴ ᴅᴇᴡ ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ•*`
+	     };
+        const _0x300969 = {
+          quoted: _0x52165a
+        };
+        return await _0x5b1fc0.replyList(_0x2b6d5b, _0x53ce41, _0x300969);
+      } else {
+        const _0x45eb6d = [{
+          title: "",
+          rows: [{
+            title: "1",
+            rowId: _0x11345c + "downmenu",
+            description: "Downloader Commands"
+          }, {
+            title: "2",
+            rowId: _0x11345c + "searchmenu",
+            description: "Search Commands"
+          }, {
+            title: "3",
+            rowId: _0x11345c + "convertmenu",
+            description: "Converter Commands"
+          }, {
+            title: "4",
+            rowId: _0x11345c + "logomenu",
+            description: "Logo Commands"
+          }, {
+            title: "5",
+            rowId: _0x11345c + "mainmenu",
+            description: "Main Commands"
+          }, {
+            title: "6",
+            rowId: _0x11345c + "groupmenu",
+            description: "Group Commands"
+          }, {
+            title: "7",
+            rowId: _0x11345c + "bugmenu",
+            description: "Bug commands"
+          }, {
+            title: "8",
+            rowId: _0x11345c + "othermenu",
+            description: "Other commands"
+          }]
+        }];
       
 await conn.sendMessage(from, { image: { url: "https://i.ibb.co/SsqGnFc/20240905-163614.jpg" }, caption: menumg }, { quoted:mek})
 } catch (e) {
