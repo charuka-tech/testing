@@ -6,7 +6,7 @@ let needus = "*Please give me a x url!*"
 //==========================================for button users==============================================
 
 cmd({
-    pattern: "twitter",    
+    pattern: "twitter2",    
     alias: ["x","twit","twitterdl"],
     react: '🌀',
     desc: "Download tiktok videos",
