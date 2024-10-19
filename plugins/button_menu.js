@@ -21,10 +21,6 @@ try{
 
     let { prefix } = message;
 
-        let [date, time] = new Date()
-
-          .toLocaleString("en-IN", { timeZone: "Asia/Colombo" })
-
           .split(",");
 
     let data = {
