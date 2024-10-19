@@ -21,7 +21,7 @@ try{
 
     let { prefix } = message;
 
-          .split(",");
+      
 
     let data = {
 
