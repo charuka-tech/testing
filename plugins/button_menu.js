@@ -8,7 +8,7 @@ cmd({
 
   pattern: "panel", // Command pattern
 
-  fromMe: isPrivate, // Need to respond for everyone's message? true: only from sudo numbers, false: from everyone, isPrivate: same as false but will be considered as true if worktype is private
+  fromMe: "isPrivate", // Need to respond for everyone's message? true: only from sudo numbers, false: from everyone, isPrivate: same as false but will be considered as true if worktype is private
 
   desc: "Button Commands Panel", // Description of the command
 
@@ -122,3 +122,4 @@ try{
       return await message.sendMessage(message.jid, data, {}, "interactive");
 
 
+})
