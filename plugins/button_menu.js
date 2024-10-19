@@ -1,7 +1,5 @@
 const { OWNER_NAME, BOT_NAME } = require("../config");
 
-const { hostname } = require("os");
-
 const plugins = require("../lib/plugins");
 
 
@@ -116,15 +114,7 @@ cmd({
 
   ┃ ⎆  *PREFIX*: ${prefix}
 
-  ┃ ⎆  *HOST NAME*: ${hostname().split("-")[0]}
-
-  ┃ ⎆  *DATE*: ${date}
-
-  ┃ ⎆  *TIME*: ${time}
-
   ┃ ⎆  *COMMANDS*: ${plugins.commands.length} 
-
-  ┃ ⎆  *UPTIME*: ${clockString(process.uptime())} 
 
   ╰━━━━━━━━━━━━━━━\n`,
 
