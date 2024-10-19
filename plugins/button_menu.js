@@ -1,4 +1,4 @@
-const { OWNER_NAME, BOT_NAME } = require("../../config");
+const { OWNER_NAME, BOT_NAME } = require("../config");
 
 const { hostname } = require("os");
 
