@@ -12,4 +12,7 @@ AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "false",
 OMDB_API_KEY: process.env.OMDB_API_KEY="76cb7f39",
 OWNER_NAME: process.env.OWNER_NAME || "mr charuka",
 BOT_NAME: process.env.BOT_NAME || "mizuki md",
+HANDLERS:process.env.HANDLER === "true" || process.env.HANDLER === "null"
+      ? "!"
+      : ".",
 };
