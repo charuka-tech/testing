@@ -6,7 +6,7 @@ const plugins = require("../lib/plugins");
 
 
 
-command({
+cmd({
 
   pattern: "panel", // Command pattern
 
