@@ -2,8 +2,6 @@ const { OWNER_NAME, BOT_NAME } = require("../config");
 
 const { hostname } = require("os");
 
-const { command, isPrivate, clockString, pm2Uptime } = require("../lib");
-
 const plugins = require("../lib/plugins");
 
 
