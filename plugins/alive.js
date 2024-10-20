@@ -178,8 +178,8 @@ ${menuc6}*╰───────────●●►*
         let message = {
             image: mov.result.thumb,
             header: '',
-            footer: 'mizuki md'
-            body: mala
+            footer: 'mizuki md',
+            body: mala,
         }   
 return conn.sendButtonMessage(from, buttons, m, message) 
 	     
