@@ -15,7 +15,7 @@ let baseUrl;
 
 //========================fb downloader=============================
 cmd({
-    pattern: "fb",
+    pattern: "fb2",
     react: "☑️",
     alias: ["facebook"],
     desc: "download fb videos",
