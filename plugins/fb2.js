@@ -61,7 +61,7 @@ let mala = `乂 *X - D O W N L O A D E R*
         let message = {
             image: mov.result.thumb,
             header: '',
-            footer: 'mizuki md'
+            footer: 'mizuki md',
             body: mala
         }   
 return conn.sendButtonMessage(from, buttons, m, message) 
