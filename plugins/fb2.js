@@ -1,17 +1,17 @@
 const config = require('../config')
 const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
-let needus = "*Please give me a x url!*" 
+let needus = "*Please give me a fb url!*" 
 
 //==========================================for button users==============================================
 
 cmd({
-    pattern: "fb2",    
-    alias: ["x","twit","twitterdl"],
+    pattern: "facebook",    
+    alias: ["facebook","fb","fbdl"],
     react: '🌀',
-    desc: "Download tiktok videos",
+    desc: "Download fb videos",
     category: "download",
-    use: '.twitter < twitter url >',
+    use: '.fb < fb url >',
     filename: __filename
 },
 async(conn, mek, m,{from, l, prefix, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -19,12 +19,12 @@ try{
   
   
   if (!q) return await reply('TEXT') 
-      if (!q.includes('tiktok')) return await reply('valid_url') 
+      if (!q.includes('Facebook')) return await reply('valid_url') 
 
 
-const mov = await fetchJson(`https://raw.githubusercontent.com/prabathLK/PUBLIC-URL-HOST-DB/main/public/url.json${q}`)
+const mov = await fetchJson(`https://raw.githubusercontent.com/prabathLK/PUBLIC-URL-HOST-DB/main/public/url.json`)
     
-let mala = `乂 *X - D O W N L O A D E R*
+let mala = `乂 *FB- D O W N L O A D E R*
 
     *◦ Title:* ${mov.result.desc}
 `
@@ -61,7 +61,7 @@ let mala = `乂 *X - D O W N L O A D E R*
         let message = {
             image: mov.result.thumb,
             header: '',
-            footer: 'mizuki md',
+            footer: config.FOOTER,
             body: mala
         }   
 return conn.sendButtonMessage(from, buttons, m, message) 
@@ -70,3 +70,50 @@ console.log(e)
 reply(`${e}`)
 }
 })
+//===========================================================================
+cmd({
+    pattern: "fbdl",
+    react: '💫',
+    dontAddCommandList: true,
+    use: '.fbdl <fb link>',
+    filename: __filename
+},
+async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+if (!q) return await  reply(needus)
+let wm = config.FOOTER
+await conn.sendMessage(from, { video: { url: q }, caption: wm}, { quoted: mek })
+await conn.sendMessage(from, { react: { text: '✅', key: mek.key }})
+} catch (e) {
+reply('*Error !!*')
+console.log(e)
+}
+})
+//==============================================================================
+
+cmd({
+    pattern: "fbmp3",
+    react: '💫',
+    dontAddCommandList: true,
+    filename: __filename
+},
+async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+if (!q) return await  reply(needus)
+conn.sendMessage(from , { audio : { url : q  } ,mimetype: 'audio/mpeg' } , { quoted: mek })
+} catch (e) {
+reply('*Error !!*')
+console.log(e)
+}
+})
+
+
+
+
+//-------- *For Button Users* --
+
+
+
+
+
+                     
