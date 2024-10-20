@@ -145,6 +145,43 @@ ${menuc6}*╰───────────●●►*
 
 
 *•Qᴜᴇᴇɴ ᴅᴇᴡ ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ•*`
+	    let buttons = [{
+                    name: "cta_url",
+                    buttonParamsJson: JSON.stringify({
+                        display_text: config.BTN,
+                        url: config.BTNURL,
+                        merchant_url: config.BTNURL
+                    }),
+                },
+                { name: 'single_select',
+            buttonParamsJson: JSON.stringify({
+               title: 'Tap Here!',
+               sections: [{
+                  rows: [{
+                     title: 'PING',
+                     // description: `X`,
+                     id: prefix + `xdl ${mov.result.video_sd}`
+                  }, {
+                     title: 'PING',
+                     // description: `ping`,
+                     id: prefix + `xdl ${mov.ping}`
+                  }, {
+                     title: 'MENU2',
+                     // description: `menu2`,
+                     id: prefix + `.menu2 ${mov.menu2}`
+		  }]
+               }]
+            })
+         }]
+	
+
+        let message = {
+            image: mov.result.thumb,
+            header: '',
+            footer: 'mizuki md'
+            body: mala
+        }   
+return conn.sendButtonMessage(from, buttons, m, message) 
 	     
         
       
