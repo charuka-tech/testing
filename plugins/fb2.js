@@ -11,7 +11,7 @@ cmd({
     react: '🌀',
     desc: "Download fb videos",
     category: "download",
-    use: '.fb < fb url >',
+    use: '.fb2 < fb url >',
     filename: __filename
 },
 async(conn, mek, m,{from, l, prefix, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
