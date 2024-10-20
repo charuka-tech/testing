@@ -14,7 +14,7 @@
     }
   }
 })(_0x5bb5, 992057);
-const config = require("../settings");
+const config = require("../config");
 function _0x2ce7c5(_0x4d3cba, _0x31ce93, _0x5321dd, _0x24a477, _0x37c608) {
   return _0x5716(_0x4d3cba + 0x155, _0x31ce93);
 }
