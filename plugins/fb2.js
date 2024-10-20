@@ -6,7 +6,7 @@ let needus = "*Please give me a fb url!*"
 //==========================================for button users==============================================
 
 cmd({
-    pattern: "facebook",    
+    pattern: "fb2",    
     alias: ["facebook","fb","fbdl"],
     react: '🌀',
     desc: "Download fb videos",
