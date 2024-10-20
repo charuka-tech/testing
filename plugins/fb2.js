@@ -6,12 +6,12 @@ let needus = "*Please give me a fb url!*"
 //==========================================for button users==============================================
 
 cmd({
-    pattern: "fb2",    
+    pattern: "fb",    
     alias: ["facebook","fb","fbdl"],
     react: '🌀',
     desc: "Download fb videos",
     category: "download",
-    use: '.fb2 < fb url >',
+    use: '.fb < fb url >',
     filename: __filename
 },
 async(conn, mek, m,{from, l, prefix, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
