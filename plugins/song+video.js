@@ -58,11 +58,7 @@ let mala = `乂 *X - D O W N L O A D E R*
         }   
 return conn.sendButtonMessage(from, buttons, m, message) 
     
-} catch (e) {
-console.log(e)
-reply(`${e}`)
-}
-})
+
 }catch(e){
 console.log(e)
 reply(`${e}`)
