@@ -2,7 +2,7 @@
 
 
 
-const config = require('../setting')
+const config = require('../config')
 const { cmd, commands } = require('../command')
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions')
 const apkdl = require('../lib/apkdl')
@@ -71,9 +71,9 @@ let MNG = `\`✦ 𝗠𝗜𝗭𝗨𝗞𝗜 𝗠𝗗 𝗩2 ✦\`
 `
 
 let opts = {
-    image: setting.LOGO,
+    image: config.LOGO,
     header: '',
-    footer: setting.FOOTER,
+    footer: config.FOOTER,
     body: MNG
 
 }
